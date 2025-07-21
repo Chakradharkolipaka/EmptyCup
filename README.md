@@ -1,50 +1,17 @@
-# EmptyCup Full Stack Assignment (MERN)
+A full stack assignment implementing a MERN (MongoDB, Express, React, Node.js) app to showcase a designer listing page. It features a mobile-friendly frontend and backend API for managing designer data.
 
-## Project Structure
-- `client/` — React frontend (Create React App)
-- `server/` — Express backend API
+Key Features:
 
-## Local Development (No Docker)
+Mobile-friendly designer listing page
 
-### 1. Install dependencies
+Shortlist toggle for each designer
 
-```
-cd server && npm install
-cd ../client && npm install
-```
+Top bar filter for shortlisted designers
 
-### 2. Start backend
+Data fetching from the Express backend
 
-```
-cd ../server
-node index.js
-```
+Easy transition to MongoDB integration for dynamic data storage
 
-### 3. Start frontend
+Suggested enhancements: Docker orchestration and deployment guidance
 
-```
-cd ../client
-npm start
-```
-
-- Frontend: [http://localhost:3000](http://localhost:3000)
-- Backend API: [http://localhost:5000/api/designers](http://localhost:5000/api/designers)
-
-## Features
-- Mobile-friendly designer listing page
-- Shortlist toggle per designer
-- Shortlisted filter in top bar
-- Data fetched from Express backend
-
-## Next Steps
-- Replace static designer data with MongoDB (see `server/index.js`)
-- Add Docker and docker-compose for local orchestration
-- Deploy frontend (Netlify) and backend (Render, Railway, or your VM)
-
-## Notes
-- Place designer images in `client/public/` and update image paths in backend data.
-- For Figma icons/fonts, download and add to `client/public/` or use CDN links in `public/index.html`.
-
----
-
-For any issues, contact the assignment provider.
+Static assets management (for images, icons, fonts)
